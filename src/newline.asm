@@ -9,7 +9,13 @@ newline:
     mov ebp, esp
 
     ; TODO:
-    ; imprimir '\n'
+    ; imprimir '\n' ;
+
+    mov eax, 10 ;10 es el codigo ASCII para "\n"
+    push eax
+    call print_char
+    add esp, 4
+
 
     mov esp, ebp
     pop ebp
